@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #fff3b1, #ffbae8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    padding: 20px;
+}
+
+.image-grid {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    max-height: 60vh; /* Reduce the height of the image container */
+}
+
+.image-large {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-large img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.image-small {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    justify-content: center;
+}
+
+.image-small img {
+    width: 100%;
+    height: auto;
+    max-height: 48%; /* Adjust this to fit within the reduced height */
+    object-fit: cover;
+}
+
+.text-content {
+    background-color: #ff6f61;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    width: 40%;
+    height: 300px; /* Increase the height of the text container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-content h2 {
+    margin: 0;
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.text-content h1 {
+    margin: 10px 0;
+    font-size: 65px;
+    text-align: left;
+    letter-spacing: 4px;
+}
+
+.text-content button {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #ff6f61;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-weight: 600;
+    border-color: #ff6f61;
+    border: 0;
+}
+.text-content a {
+    text-align: left;
+    border-bottom: 10px;
+    color: black;
+}
+.text-content img {
+    height: 35px;
+    width: 40px;
+}
